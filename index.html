@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love, Kinzang Tshomo 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    text-align: center;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(255,182,193,0.8);
+  }
+  h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    text-shadow: 0 0 15px rgba(255,160,190,0.8);
+  }
+
+  .hidden { display: none; }
+
+  button {
+    background-color: #ff7eb3;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255,100,150,0.6);
+  }
+  button:hover {
+    background-color: #ff5580;
+    transform: scale(1.05);
+  }
+
+  .back-btn {
+    position: relative;
+    overflow: hidden;
+  }
+  .back-btn::after {
+    content: "💖💖💖";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    opacity: 0;
+    animation: fadeHearts 2s infinite;
+  }
+  @keyframes fadeHearts {
+    0%,100% { opacity: 0; transform: translateY(10px); }
+    50% { opacity: 1; transform: translateY(0); }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .icon {
+    font-size: 3em;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .icon:hover {
+    transform: scale(1.2);
+  }
+
+  iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 15px rgba(255,150,180,0.6);
+  }
+
+  /* 🌳 Romantic Love Tree Gallery */
+  .love-tree-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    height: 600px;
+  }
+
+  .love-tree-container .tree {
+    width: 100%;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(255,192,203,0.6));
+    border-radius: 15px;
+  }
+
+  .photo {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    animation: sway 4s ease-in-out infinite, fadeIn 1.2s ease forwards;
+    transform-origin: top center;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(255,150,200,0.6);
+    background: rgba(255,255,255,0.1);
+  }
+
+  .photo::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px rgba(255,150,200,0.6);
+  }
+
+  @keyframes sway {
+    0%,100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* 💐 Flowers Layout */
+  .flowers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  .flowers img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(255,100,150,0.5);
+    transition: transform 0.3s ease;
+  }
+  .flowers img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,150,200,0.8);
+  }
+
+  /* Floating Hearts */
+  .heart {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    font-size: 1.5rem;
+    color: #ffb6c1;
+    opacity: 0.8;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(-10px); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+
+  .gift-message {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.8;
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255,150,200,0.5);
+  }
+
+  .gift-image {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255,150,200,0.7);
+  }
+</style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="background-music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function showPage(pageId) {
+  const pages = document.querySelectorAll('div[id]');
+  pages.forEach(page => page.classList.add('hidden'));
+  document.getElementById(pageId).classList.remove('hidden');
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.textContent = "💖";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = 4 + Math.random() * 4 + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 8000);
+}
+setInterval(createHeart, 600);
+</script>
+
+<div id="home">
+  <h1>Hello My Love, Kinzang Tshomo 💖</h1>
+  <p>Would you like to see something special?</p>
+  <button onclick="showPage('yesPage')">Yes Please 💕</button>
+  <button onclick="showPage('noPage')">No Thanks 😢</button>
+</div>
+
+<div id="noPage" class="hidden">
+  <h2>😢 I promise you'll like it!</h2>
+  <img src="images/crying.png" width="150" alt="Crying Emoji">
+  <br>
+  <button onclick="showPage('home')" class="back-btn">Try Again 💞</button>
+</div>
+
+<div id="yesPage" class="hidden">
+  <h2>These are for you, my love 💐</h2>
+  <p>I hope you will love them, Kinzang Tshomo ❤️</p>
+  <p style="font-style:italic; color:#ffe4ec;">💝 Please open the gift icon at the very end — it holds something truly special 💝</p>
+  <div class="icons">
+    <div class="icon" onclick="showPage('gallery')">🖼️</div>
+    <div class="icon" onclick="showPage('flowers')">🌸</div>
+    <div class="icon" onclick="showPage('loveSong')">💖</div>
+    <div class="icon" onclick="showPage('loveLetter')">💌</div>
+    <div class="icon" onclick="showPage('giftPage')">🎁</div>
+  </div>
+</div>
+
+<!-- 🌳 GALLERY PAGE -->
+<div id="gallery" class="hidden">
+  <h2>These pictures I see when I miss you 💕</h2>
+  <div class="love-tree-container">
+    <img src="images/tree.jpg" alt="Love Tree" class="tree">
+    <div class="photo" style="top: 38%; left: 22%; animation-delay: 0.2s;"><img src="images/her1.jpg" alt="Her Photo 1"></div>
+    <div class="photo" style="top: 25%; left: 58%; animation-delay: 0.4s;"><img src="images/her2.jpg" alt="Her Photo 2"></div>
+    <div class="photo" style="top: 55%; left: 72%; animation-delay: 0.6s;"><img src="images/her3.jpg" alt="Her Photo 3"></div>
+    <div class="photo" style="top: 60%; left: 40%; animation-delay: 0.8s;"><img src="images/her4.jpg" alt="Her Photo 4"></div>
+  </div>
+  <button onclick="showPage('yesPage')" class="back-btn">💗 Back to Gifts</button>
+</div>
+
+<!-- 💐 FLOWERS PAGE -->
+<div id="flowers" class="hidden">
+  <h2>Virtual Flowers Just for You 🌷</h2>
+  <div class="flowers">
+    <img src="flowers/f1.jpg" alt="Flower 1">
+    <img src="flowers/f2.jpg" alt="Flower 2">
+    <img src="flowers/f3.jpg" alt="Flower 3">
+    <img src="flowers/f4.jpg" alt="Flower 4">
+    <img src="flowers/f5.jpg" alt="Flower 5">
+    <img src="flowers/f6.jpg" alt="Flower 6">
+    <img src="flowers/f7.jpg" alt="Flower 7">
+    <img src="flowers/f8.jpg" alt="Flower 8">
+  </div>
+  <button onclick="showPage('yesPage')" class="back-btn">💗 Back to Gifts</button>
+</div>
+
+<!-- 🎵 SONG PAGE -->
+<div id="loveSong" class="hidden">
+  <h2>🎶 This Song Reminds Me of You 💕</h2>
+  <iframe src="https://www.youtube.com/embed/CYY5rgZjNNg?si=WewBtO3c3ZNIdvtg" allowfullscreen></iframe>
+  <br>
+  <button onclick="showPage('yesPage')" class="back-btn">💗 Back to Gifts</button>
+</div>
+
+<!-- 💌 LETTER PAGE -->
+<div id="loveLetter" class="hidden">
+  <h2>💌 A Letter From My Heart 💌</h2>
+  <p>
+    My dearest Kinzang Tshomo,<br><br>
+    Every day with you feels like a blessing written by the stars.  
+    Your smile lights up my darkest hours, and your laughter is my favorite melody.  
+    I love you more deeply than words can ever describe,  
+    and I promise to cherish you for all my tomorrows. 💞  
+  </p>
+  <button onclick="showPage('yesPage')" class="back-btn">💗 Back to Gifts</button>
+</div>
+
+<!-- 🎁 GIFT PAGE -->
+<div id="giftPage" class="hidden">
+  <h2>🎁 A Special Gift for You, My Love 💕</h2>
+  <div class="gift-message">
+    My precious Kinzang Tshomo,<br><br>
+    I love you endlessly. Having you in my life is the greatest blessing I could ever ask for.  
+    One day, I’ll marry you, have kids with you, travel the world by your side,  
+    build a cozy home together, grow older with you,  
+    and spend every sunrise and sunset loving and treating you right.  
+    I truly wish for a lifetime with you, my forever. 💞  
+  </div>
+
+  <div class="gift-message">
+    Since you wished for November to be full of happiness and love,  
+    I wanted to make it extra special for you.  
+    To shower you with my love, I’ve ordered a beautiful **necklace with your name** —  
+    a symbol of my love that you can carry close to your heart always. 💝  
+  </div>
+
+  <img src="images/necklace.jpg" alt="Necklace" class="gift-image">
+  <p style="margin-top:20px; font-weight:600; color:#fff9fa;">
+    📍 Pickup point: <b>LUGAR THEATRE Building</b><br>
+    The shop will be open every day between <b>1 PM to 7 PM</b>.
+  </p>
+  <button onclick="showPage('yesPage')" class="back-btn">💗 Back to Gifts</button>
+</div>
+
+</body>
+</html>
